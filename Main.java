@@ -6,19 +6,9 @@ public class Main {
 
         mazo_1.crear_mazo();
 
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
-        mazo_1.get_carta();
+        for (int i = 0; i < 100; i++) {
+            mazo_1.get_carta();
+        }
     }
     
 }
