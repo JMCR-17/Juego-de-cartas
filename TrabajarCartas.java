@@ -21,7 +21,7 @@ public class TrabajarCartas{
         );
     }
 
-    private void crear_palo(Queue mazo1, String palo) {
+    private void crear_palo(Queue<Cartas> mazo1, String palo) {
         for (int valor = 1; valor < 12; valor++) {
             Cartas c = new Cartas(palo, valor);
             mazo1.add(c);
