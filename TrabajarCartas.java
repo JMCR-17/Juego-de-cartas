@@ -1,5 +1,5 @@
-import java.util.Queue;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class TrabajarCartas{
 
@@ -15,7 +15,10 @@ public class TrabajarCartas{
 
     public void get_carta(Queue mazo){
         mazo.add(mazo.peek());
-        mazo.toString_carta(mazo.poll());
+
+        System.out.println(
+            mazo.poll() 
+        );
     }
 
     private void crear_palo(Queue mazo1, String palo) {
