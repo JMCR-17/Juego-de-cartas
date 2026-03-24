@@ -1,9 +1,9 @@
 public class Cartas {
 
     private static int contador_cartas= 0;
-    private int ID_carta;
-    private String palo;
-    private int valor;
+    private static int ID_carta;
+    private static String palo;
+    private static int valor;
 
     public Cartas(String palo, int valor){
         
@@ -20,16 +20,11 @@ public class Cartas {
         return ID_carta;
     }
 
-    public void setPalo(String palo){
-        this.palo = palo;
-    }
+    // tampoco necesito setters en los demas atributos porque quiero que NO se cambien una vez creaod el objeto
     public String getPalo(){
         return palo;
     }
 
-    public void setValor(int valor){
-        this.valor = valor;
-    }
     public int getValor(){
         return valor;
     }
