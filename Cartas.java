@@ -5,9 +5,11 @@ public class Cartas {
     private String palo;
     private int valor;
 
-    public Cartas( String palo, int valor){
+    public Cartas(String palo, int valor){
         
         this.ID_carta = contador_cartas; 
+        contador_cartas++;
+
         this.palo = palo;
         this.valor = valor;
 
@@ -32,8 +34,8 @@ public class Cartas {
         return valor;
     }
 
-    public String toString_carta(String palo, int valor, int ID_carta){
-        return "la carta es el" + valor+ " de " + palo + " y tiene el ID" +ID_carta;
+    public String toString_carta(){
+        return "la carta es el " + valor+ " de " + palo + " y tiene el ID" +ID_carta;
     }
 
 }

@@ -5,7 +5,7 @@ public class TrabajarCartas{
 
     Queue<Cartas> mazo = new LinkedList<>();
 
-    public void crear_mazo(Queue mazo){
+    public void crear_mazo(){
 
         crear_palo(mazo, "oros");
         crear_palo(mazo, "bastos");
@@ -13,11 +13,11 @@ public class TrabajarCartas{
         crear_palo(mazo, "copas");
     }
 
-    public void get_carta(Queue mazo){
+    public void get_carta(){
         mazo.add(mazo.peek());
 
         System.out.println(
-            mazo.poll() 
+            mazo.poll().toString_carta() 
         );
     }
 
