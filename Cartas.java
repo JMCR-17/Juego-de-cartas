@@ -33,6 +33,9 @@ public class Cartas {
         return valor;
     }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> claseCartas
 }
