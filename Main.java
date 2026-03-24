@@ -7,7 +7,9 @@ public class Main {
 
         mazo_1.crear_mazo();
 
-        for (int i = 0; i < 100; i++) {
+        mazo_1.barajar_mazo();
+
+        for(int i = 0; i < mazo_1.mazo.size(); i++){
             mazo_1.get_carta();
         }
 
