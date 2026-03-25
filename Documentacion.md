@@ -16,3 +16,5 @@
     el que tiene la logica se llamara TrabajarCartas y el main Mazo
 
     para guardar el mazo se usara una cola 
+
+**crear mazo tiene un constructor en el que se mete un array de strings con los palos que tendra la baraja y un int que sera la cantidad de cartas por palo**

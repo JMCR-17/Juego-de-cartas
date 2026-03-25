@@ -3,15 +3,25 @@ import java.util.Queue;
 import java.util.Random;
 
 public class TrabajarCartas{
+    private final int num_cartas_palo;
+    private final String[] palos_cartas;
 
     Queue<Cartas> mazo = new LinkedList<>();
 
-    public void crear_mazo(){
+    public TrabajarCartas(String[] palos,int num_cartas_palo){
+        this.palos_cartas = palos;
+        this.num_cartas_palo = num_cartas_palo;
 
-        crear_palo(mazo, "oros");
-        crear_palo(mazo, "bastos");
-        crear_palo(mazo, "espadas");
-        crear_palo(mazo, "copas");
+        //el mazo ya se crea nada mas se cree el objeto
+        crear_mazo(palos, num_cartas_palo);
+    }
+
+    private void crear_mazo(String[] palos,int num_cartas_palo){
+
+        for(int i = 0; i < palos.length; i++){
+            crear_palo(mazo, palos[i], num_cartas_palo);
+        }
+
     }
 
     public void get_carta(){
@@ -49,9 +59,9 @@ public class TrabajarCartas{
         }
     }
 
-    private void crear_palo(Queue<Cartas> mazo1, String palo) {
-        for (int valor = 1; valor < 12; valor++) {
-            Cartas c = new Cartas(palo, valor);
+    private void crear_palo(Queue<Cartas> mazo1, String palos, int num_cartas_palo) {
+        for (int valor = 1; valor <= num_cartas_palo; valor++) {
+            Cartas c = new Cartas(palos, valor);
             mazo1.add(c);
         }
     }

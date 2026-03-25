@@ -15,11 +15,12 @@ public class Cartas {
 
     }
 
-    //no necesito setter porque el id nunca se va a cambiars
+    //no necesito setter porque el id nunca se va a cambiar
     public int getID_carta(){
         return ID_carta;
     }
 
+    // tampoco son necesarios los otros setters porque los valores son final
     public String getPalo(){
         return palo;
     }
