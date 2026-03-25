@@ -1,9 +1,10 @@
 public class Cartas {
 
     private static int contador_cartas= 0;
-    private static int ID_carta;
-    private static String palo;
-    private static int valor;
+
+    private final int ID_carta;
+    private final String palo;
+    private final int valor;
 
     public Cartas(String palo, int valor){
         
@@ -15,12 +16,16 @@ public class Cartas {
 
     }
 
-    //no necesito setter porque el id nunca se va a cambiars
+    //no necesito setter porque el id nunca se va a cambiar
     public int getID_carta(){
         return ID_carta;
     }
 
+
     // tampoco necesito setters en los demas atributos porque quiero que NO se cambien una vez creaod el objeto
+
+    // tampoco son necesarios los otros setters porque los valores son final
+
     public String getPalo(){
         return palo;
     }
