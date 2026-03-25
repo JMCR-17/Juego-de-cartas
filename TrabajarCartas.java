@@ -24,6 +24,15 @@ public class TrabajarCartas{
 
     }
 
+    // este metodo quita la carta del tope y no la vuelve a añadir al mazo
+    public Cartas robar_carta(){
+
+        Cartas carta_robada = mazo.poll();
+
+        return carta_robada;
+    }
+
+    //este metodo roba la carta del tope pero la devuelve al mazo por detras
     public void get_carta(){
         mazo.add(mazo.peek());
 
