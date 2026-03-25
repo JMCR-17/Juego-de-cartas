@@ -1,4 +1,0 @@
-## poker
-
-
-# crear clase cartas 
